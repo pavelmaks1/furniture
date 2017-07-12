@@ -1,0 +1,200 @@
+nav.navbar.navbar-default role="navigation"
+  .container-fluid
+    /! Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    /! Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-left
+        icon class='fa fa-bars' id='bars'
+        | Категории
+
+      ul.nav.navbar-nav
+        li
+          a href="#"  Услуги
+        li
+          a href="#"  О нас
+        li
+          a href="#"  Партнеры
+
+
+#main
+  #nav_banners
+    .container
+      .row
+        .col-xs-12.col-lg-3
+          #categories_menu class='hidden_small'
+            ul
+              li
+                a Шкафы-Купе
+                span class='fa fa-angle-right'
+              li
+                a Детские
+                span class='fa fa-angle-right'
+              li
+                a Кухни
+                span class='fa fa-angle-right'
+              li
+                a Прихожие
+                span class='fa fa-angle-right'
+              li
+                a Ванные комнаты
+                span class='fa fa-angle-right'
+              li
+                a Особые заказы
+                span class='fa fa-angle-right'
+              li
+                a Мягкая мебель
+                span class='fa fa-angle-right'
+              li
+                a Шкафы
+                span class='fa fa-angle-right'
+              li
+                a Шкафы
+                span class='fa fa-angle-right'
+              li
+                a Шкафы
+                span class='fa fa-angle-right'
+              li
+                a Шкафы
+                span class='fa fa-angle-right'
+              li
+                a Шкафы
+                span class='fa fa-angle-right'
+
+
+
+
+
+
+          .main_banner
+            .wrapper
+              input type='radio' name='point' id='slide1'
+              input type='radio' name='point' id='slide2'
+              input type='radio' name='point' id='slide3'
+              input type='radio' name='point' id='slide4'
+              input type='radio' name='point' id='slide5'
+              .slider
+                .slides.slide1 Кухня-студия в темных тонах
+                .slides.slide2 Спальня- Модерн dark
+                .slides.slide3 Кухня-студия в темных тонах
+                .slides.slide4 Кухня-студия в темных тонах
+                .slides.slide5 Кухня-студия в темных тонах
+              .controls
+                label for='slide1'
+                label for='slide2'
+                label for='slide3'
+                label for='slide4'
+                label for='slide5'
+
+
+
+                /.w3-content.w3-display-container
+                /  img class='mySlides' src='assets/image1.jpg'
+                /  img class='mySlides' src='assets/image2.jpg'
+                /  img class='mySlides' src='assets/image3.jpg'
+                /
+                /  button class='w3-button w3-black w3-display-left' onclick="plusDivs(-1)"&#10094;
+                /  button class='w3-button w3-black w3-display-right' onclick="plusDivs(+1)"&#10095;
+
+
+
+
+#home-description
+  div class='container'
+    div class='row centered'
+      h1 Наши прицнипы:
+      br
+      div class='col-lg-4'
+        i class='fa  fa-user-plus '
+        h4 Индивидуальность
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+
+      div class='col-lg-4'
+        i class='fa fa-diamond'
+        h4 Эксклюзивность
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+
+      div class='col-lg-4'
+        i class='fa fa-trophy'
+        h4 Качество и сроки
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+
+      div class='col-lg-4'
+        i class='fa fa-graduation-cap'
+        h4 Профессионализм
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+
+      div class='col-lg-4'
+        i class='fa fa-diamond'
+        h4 Эксклюзивность
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+
+      div class='col-lg-4'
+        i class='fa fa-trophy'
+        h4 Качество и сроки
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .
+
+#latest
+  .container
+    div class="row centered"
+      h4 Последние работы
+      br
+      .col-lg-4
+        .tilt
+          = link_to image_tag('furn1.jpg', class: 'img-thumbnail')
+
+      .col-lg-4
+        .tilt
+          = link_to image_tag('furn2.jpg', class: 'img-thumbnail')
+
+      .col-lg-4
+        .tilt
+          = link_to image_tag('furn4.jpg', class: 'img-thumbnail')
+
+
+
+#home-about
+  .container
+    div class='row left'
+      br
+      div class='col-lg-6 '
+        h1 Мы думаем о вашем комфорте, удовольствии и достатке, поэтому
+        p
+          i class='fa fa-check'
+          | Постоянно совершенствуемся
+          img src='assets/fon7.jpg' class='img-circle'
+    div class='row left'
+      div class='col-lg-6' id='third-post'
+        p
+          i class='fa fa-check'
+          | Находим нестандартные решения и воплощаем их в жизнь.
+          img src='assets/eskis2.jpg' class='img-circle'
+      div class='col-lg-5 col-lg-offset-1'
+        p
+          i class='fa fa-check'
+          |Разрабатываем новые идеи и технологии
+          img src='assets/eskis1.jpg' class='img-circle'
+#about-img
+  div class='container wb'
+    div class='row centered'
+      br
+      div class='col-lg-8 col-lg-offset-2'
+        h4 Главный мотив нашей деятельности и ее цель - радость и положительные отзывы наших клиентов!
+        br
+      .col-lg-2
+      div class='col-lg-10 col-lg-offset-1'
+        span class='fa fa-star'
+        span class='fa fa-star'
+        span class='fa fa-star'
+        span class='fa fa-star'
+        span class='fa fa-star'
+
+        p Вызовите нашего дизайнера прямо сейчас и обсудите все детали предстоящего заказа.
+          Вместе вы легко подберете нужный цвет, стиль и размер изделия любой сложности, которое
+          гарантированно станет излюбленной вещью и одной из главных "изюминок" вашего домашнего или рабочего
+          интерьера.
